@@ -1,0 +1,19 @@
+[package]
+name = "endfield-resolution-editor"
+version = "0.1.0"
+description = "Endfield resolution editor"
+authors = ["you"]
+license = "MIT"
+repository = ""
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = ["window-all"] }
+serde = { version = "1.0", features = ["derive"] }
+winreg = "0.10"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]

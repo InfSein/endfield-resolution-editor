@@ -1,0 +1,45 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "Endfield Resolution Editor",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "windows": [
+      {
+        "title": "Endfield Resolution Editor",
+        "width": 600,
+        "height": 460,
+        "minWidth": 400,
+        "minHeight": 300,
+        "decorations": false,
+        "transparent": true,
+        "resizable": true,
+        "fullscreen": false
+      }
+    ],
+    "bundle": {
+      "active": true,
+      "identifier": "com.hypergryph.endfield.resolution.editor",
+      "targets": ["msi", "nsis"],
+      "icon": [
+        "icons/icon.ico",
+        "icons/icon.png"
+      ]
+    },
+    "allowlist": {
+      "all": false,
+      "window": {
+        "all": true
+      }
+    },
+    "security": {
+      "csp": null
+    }
+  }
+}

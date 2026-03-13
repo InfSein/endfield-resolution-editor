@@ -1,0 +1,21 @@
+node_modules/
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Vite
+/dist
+
+# Tauri / Rust
+/src-tauri/target
+/src-tauri/.tauri
+
+# Env
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
